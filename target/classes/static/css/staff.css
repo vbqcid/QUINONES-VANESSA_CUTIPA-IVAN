@@ -1,0 +1,217 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tarjeta {
+    width: calc(33.33% - 20px);
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.imagen-odontologo {
+    text-align: center;
+}
+
+.imagen-odontologo img {
+    width: 30%;
+    height: auto;
+}
+
+.informacion-odontologo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.odontologos {
+    padding: 20px;
+}
+
+.odontologos::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.buttons-odontologo {
+    margin-top: 10px;
+}
+
+.buttons-odontologo button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: blue;
+    color: white;
+}
+
+.btn-eliminar {
+    background-color: red;
+    color: white;
+}
+
+.slideshow {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.slide {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.texto {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.slider .imagenes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider .texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.slider img {
+    width: 500px;
+    height: 350px;
+}
+
+/* Estilos para el texto dentro del slider */
+.texto {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.texto h2 {
+    color: #333;
+}
+
+.texto p {
+    color: #666;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto, .informacion, .descargar {
+    flex: 1;
+    padding: 0 120px;
+}
+
+.contacto h3, .informacion h3, .descargar h3 {
+    margin-bottom: 10px;
+}
+
+.contacto ul, .informacion ul, .descargar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacto ul li, .informacion ul li, .descargar ul li {
+    margin-bottom: 5px;
+}
+
+.contacto ul li a, .informacion ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.descargar a img {
+    width: 70px;
+    height: auto;
+}

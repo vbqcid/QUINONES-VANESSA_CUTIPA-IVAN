@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Turno</title>
+    <link rel="stylesheet" href="css/stylesregister.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo de la clínica"></a>
+    </div>
+</header>
+
+<main>
+    <h1><a href="turno.html" id="myLinkinicio">Editar Turno</a> / <a href="registrarTurno.html" id="myLinkregistro">Registrar Turno</a></h1>
+    <form id="turno-form" onsubmit="return registerTurno(event)">
+        <label for="paciente">Paciente:</label>
+        <select id="paciente" name="paciente" required>
+            <!-- Las opciones de los pacientes se llenarán dinámicamente con JavaScript -->
+        </select>
+
+        <label for="odontologo">Odontólogo:</label>
+        <select id="odontologo" name="odontologo" required>
+            <!-- Las opciones de los odontólogos se llenarán dinámicamente con JavaScript -->
+        </select>
+
+        <label for="fecha-hora">Fecha y Hora:</label>
+        <input type="datetime-local" id="fecha-hora" name="fecha-hora" required>
+
+        <button id="submit-button" type="submit">Registrar Turno</button>
+    </form>
+
+    <div id="message"></div>
+</main>
+
+<footer>
+    <!-- Contenido del footer -->
+</footer>
+
+<script src="js/registrarTurno.js"></script>
+</body>
+</html>

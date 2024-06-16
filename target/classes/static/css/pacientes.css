@@ -1,0 +1,140 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pacientes {
+    padding: 20px;
+}
+
+.tarjeta {
+    width: calc(33.33% - 20px);
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.imagen-paciente {
+    text-align: center;
+}
+
+.imagen-paciente img {
+    width: 30%;
+    height: auto;
+}
+
+.informacion-paciente {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pacientes::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.buttons-paciente {
+    margin-top: 10px;
+}
+
+.buttons-paciente button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: blue;
+    color: white;
+}
+
+.btn-eliminar {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto, .informacion, .descargar {
+    flex: 1;
+    padding: 0 120px;
+}
+
+.contacto h3, .informacion h3, .descargar h3 {
+    margin-bottom: 10px;
+}
+
+.contacto ul, .informacion ul, .descargar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacto ul li, .informacion ul li, .descargar ul li {
+    margin-bottom: 5px;
+}
+
+.contacto ul li a, .informacion ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.descargar a img {
+    width: 70px;
+    height: auto;
+}

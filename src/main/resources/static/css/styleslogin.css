@@ -1,0 +1,61 @@
+/* Estilos para el contenedor del formulario */
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    margin-bottom: 8px;
+}
+
+#login-form select,
+#login-form input[type="number"],
+#login-form input[type="password"],
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#login-form .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #45a049;
+}
+
+#login-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reserva de Citas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styleslogin.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="img/Digital House.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="staff.html">Staff Médico</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="turno.html">Turnos</a></li>
+            <li><a href="registrarTurno.html">Reserva tu Turno</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    
+        <form id="login-form">
+            <h2><a href="login.html" id="myLinkinicio">Iniciar Sesión</a> / <a href="register.html" id="myLinkregistro">Registrarse</a></h2>
+            <label for="tipo-doc-reg">Tipo de Persona:</label>
+            <select id="tipo-doc-reg" onchange="toggleFields()">
+                <option value="Paciente" selected>Paciente</option>
+                <option value="Odontologo">Odontólogo</option>
+            </select>
+            <label for="usuario">ID:</label>
+            <input type="number" id="usuario" required>
+            <label id="label-password" for="password">Contraseña (DNI):</label>
+            <input type="number" id="password" required>
+            <div class="options">
+                <label for="recordar"><input type="checkbox" id="recordar"> Recordar</label>
+                <button type="button" onclick="login()">Ingresar</button>
+            </div>
+        </form>
+    </div>
+<section>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</section>
+
+<section class="opiniones">
+    <!-- Aquí se mostrarán las opiniones mas adelnmte-->
+</section>
+
+<footer>
+    
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
