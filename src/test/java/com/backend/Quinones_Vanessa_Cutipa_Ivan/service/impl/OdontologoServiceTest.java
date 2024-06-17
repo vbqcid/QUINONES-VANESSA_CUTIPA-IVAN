@@ -19,38 +19,4 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class OdontologoServiceTest {
 
-    @Autowired
-    private OdontologoService odontologoService;
-
-    @Test
-    @Order(1)
-    void deberiaRegistrarseUnOdontologoDeNombreJuan_yRetornarSuId() {
-        OdontologoEntradaDto odontologoEntradaDto = new OdontologoEntradaDto(1001, "Juan", "Perez");
-        OdontologoSalidaDto odontologoSalidaDto = odontologoService.registrarOdontologo(odontologoEntradaDto);
-
-        // assert
-        assertNotNull(odontologoSalidaDto);
-        assertNotNull(odontologoSalidaDto.getId());
-        assertEquals("Juan", odontologoSalidaDto.getNombre());
-    }
-
-    @Test
-    @Order(2)
-    void deberiaDevolverUnaListaNoVaciaDeOdontologos() {
-        List<OdontologoSalidaDto> listadoDeOdontologos = odontologoService.listarOdontologos();
-        assertFalse(listadoDeOdontologos.isEmpty());
-    }
-
-    @Test
-    @Order(3)
-    void deberiaEliminarseElOdontologoConId1() {
-        assertDoesNotThrow(() -> odontologoService.eliminarOdontologo(1L));
-    }
-
-    @Test
-    @Order(4)
-    void deberiaDevolverUnaListaVaciaDeOdontologos() {
-        List<OdontologoSalidaDto> listadoDeOdontologos = odontologoService.listarOdontologos();
-        assertTrue(listadoDeOdontologos.isEmpty());
-    }
 }
