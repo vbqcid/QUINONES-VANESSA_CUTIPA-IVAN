@@ -13,7 +13,7 @@ async function fetchOdontologos() {
                 const imageDiv = document.createElement("div");
                 imageDiv.className = "imagen-odontologo";
                 const img = document.createElement("img");
-                img.src = "img/doctor.jpeg";
+                img.src = "img/doctor.png";
                 img.alt = "Foto del odontólogo";
                 imageDiv.appendChild(img);
 

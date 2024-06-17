@@ -14,7 +14,7 @@
     </div>
     <nav>
         <ul>
-            <li><a href="staff.html">Staff Médico</a></li>
+            <li><a href="staff.html">Nuestros Odontologos</a></li>
             <li><a href="pacientes.html">Pacientes</a></li>
             <li><a href="turno.html">Turnos</a></li>
             <li><a href="registrarTurno.html">Reserva tu Turno</a></li>
@@ -25,7 +25,7 @@
 <div class="container">
     
         <form id="login-form">
-            <h2><a href="login.html" id="myLinkinicio">Iniciar Sesión</a> / <a href="register.html" id="myLinkregistro">Registrarse</a></h2>
+            <h2>Iniciar Sesión </h2>
             <label for="tipo-doc-reg">Tipo de Persona:</label>
             <select id="tipo-doc-reg" onchange="toggleFields()">
                 <option value="Paciente" selected>Paciente</option>
@@ -36,11 +36,15 @@
             <label id="label-password" for="password">Contraseña (DNI):</label>
             <input type="number" id="password" required>
             <div class="options">
-                <label for="recordar"><input type="checkbox" id="recordar"> Recordar</label>
+                <label for="recordar"><input type="checkbox" id="recordar"> ¿Recordar cuenta?</label>
                 <button type="button" onclick="login()">Ingresar</button>
             </div>
+
+            <a href="register.html" id="linkRegistro">¿No tienes una cuenta? Registrate ahora</a>
         </form>
     </div>
+
+
 <section>
 
     <button class="prev">&#10094;</button>
