@@ -1,4 +1,11 @@
-/* Estilos para el header */
+body {
+    background-image: url('../img/foto-odontologos-sonriendo-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
 header {
     color: #fff;
     padding: 10px 0;
