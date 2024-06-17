@@ -13,7 +13,7 @@ async function fetchPacientes() {
                 const imageDiv = document.createElement("div");
                 imageDiv.className = "imagen-paciente";
                 const img = document.createElement("img");
-                img.src = "img/paciente.png";
+                img.src = "img/Paciente.webp";
                 img.alt = "Foto del paciente";
                 imageDiv.appendChild(img);
 
