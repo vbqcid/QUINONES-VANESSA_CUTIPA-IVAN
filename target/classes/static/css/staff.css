@@ -1,3 +1,4 @@
+@import url(globalStyles.css);
 
 body {
     background-image: url('../img/foto-odontologos-sonriendo-2.jpg');
@@ -194,7 +195,7 @@ footer {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 500px;
+    
 }
 
 .contacto, .informacion, .descargar {

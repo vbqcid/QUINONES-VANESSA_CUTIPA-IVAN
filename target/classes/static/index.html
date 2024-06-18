@@ -25,7 +25,7 @@
 <div class="container">
     
         <form id="login-form">
-            <h2><a href="login.html" id="linkInicio">Iniciar Sesión</a> </h2>
+            <h2>Iniciar Sesión </h2>
             <label for="tipo-doc-reg">Tipo de Persona:</label>
             <select id="tipo-doc-reg" onchange="toggleFields()">
                 <option value="Paciente" selected>Paciente</option>
@@ -36,8 +36,8 @@
             <label id="label-password" for="password">Contraseña (DNI):</label>
             <input type="number" id="password" required>
             <div class="options">
-                <label for="recordar"><input type="checkbox" id="recordar"> Recordar</label>
-                <button type="button" onclick="login()">Ingresar</button>
+                <label for="recordar"><input type="checkbox" id="recordar"> ¿Recordar cuenta?</label>
+                <button type="submit" onclick="login()">Ingresar</button>
             </div>
 
             <a href="register.html" id="linkRegistro">¿No tienes una cuenta? Registrate ahora</a>
@@ -47,13 +47,8 @@
 
 <section>
 
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
 </section>
 
-<section class="opiniones">
-    <!-- Aquí se mostrarán las opiniones mas adelnmte-->
-</section>
 
 <footer>
     
