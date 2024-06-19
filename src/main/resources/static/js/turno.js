@@ -8,9 +8,9 @@ async function fetchTurnos() {
             section.innerHTML = '';
             for (const turno of turnos) {
                 console.log(`Turno data: ${JSON.stringify(turno)}`);
-                const paciente = await fetchPaciente(turno.pacienteSalidaDto.id); // Use pacienteSalidaDto.id
+                const paciente = await fetchPaciente(turno.pacienteSalidaDto.id);
                 console.log(`Fetched paciente: ${JSON.stringify(paciente)}`);
-                const odontologo = await fetchOdontologo(turno.odontologoSalidaDto.id); // Use odontologoSalidaDto.id
+                const odontologo = await fetchOdontologo(turno.odontologoSalidaDto.id);
                 console.log(`Fetched odontologo: ${JSON.stringify(odontologo)}`);
 
                 const card = document.createElement("div");
@@ -19,8 +19,7 @@ async function fetchTurnos() {
                 const imageDiv = document.createElement("div");
                 imageDiv.className = "imagen-turno";
                 const img = document.createElement("img");
-                img.src = "img/calendario.png";
-                img.alt = "Calendario del turno";
+    
                 imageDiv.appendChild(img);
 
                 const infoDiv = document.createElement("div");

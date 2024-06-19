@@ -1,26 +1,26 @@
-@import url(globalStyles.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-
-header {
-    background-color:lightblue;
-    color:black;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-nav {
-    flex-grow: 1;
+header {
+    background-color: lightblue;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .logo img {
-    width: 70px;
+    max-width: 150px;
     height: auto;
-    margin-left: 20px;
 }
 
 nav ul {
@@ -28,110 +28,110 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
-    font-size: 20px;
 }
 
 nav ul li {
     margin-right: 20px;
 }
 
-nav ul li:last-child {
-    margin-right: 0;
-}
-
 nav ul li a {
-    color: black;
+    color: #fff;
     text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.pacientes {
-    padding: 20px;
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
 }
 
 .tarjeta {
-    width: calc(33.33% - 20px);
-    background-color: #f0f0f0;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-    float: left;
-    margin-top: 20px;
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .imagen-paciente {
-    text-align: center;
+    flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .imagen-paciente img {
-    width: 30%;
-    height: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
 }
 
 .informacion-paciente {
-    text-align: center;
-    margin-top: 10px;
+    flex-grow: 1;
 }
 
-.pacientes::after {
-    content: "";
-    display: table;
-    clear: both;
+.informacion-paciente h2 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.informacion-paciente p {
+    margin: 5px 0;
+    color: #555;
 }
 
 .buttons-paciente {
+    display: flex;
+    gap: 10px;
     margin-top: 10px;
 }
 
-.buttons-paciente button {
-    margin: 5px;
-    padding: 10px;
+.btn-editar, .btn-eliminar {
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .btn-editar {
-    background-color: blue;
-    color: white;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
 }
 
 .btn-eliminar {
-    background-color: red;
-    color: white;
+    background-color: #dc3545;
+    color: #fff;
 }
 
-footer {
-    background-color: lightblue;
-    color: black;
-    padding: 50px 0;
-    justify-content: space-between;
-}
-
-.contacto, .informacion, .descargar {
-    flex: 1;
-    padding: 0 120px;
-}
-
-.contacto h3, .informacion h3, .descargar h3 {
-    margin-bottom: 10px;
-}
-
-.contacto ul, .informacion ul, .descargar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.contacto ul li, .informacion ul li, .descargar ul li {
-    margin-bottom: 5px;
-}
-
-.descargar a img {
-    width: 70px;
-    height: auto;
+.btn-eliminar:hover {
+    background-color: #c82333;
 }

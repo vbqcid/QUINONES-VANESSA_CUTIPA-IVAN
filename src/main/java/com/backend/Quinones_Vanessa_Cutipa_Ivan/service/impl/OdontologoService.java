@@ -2,7 +2,7 @@ package com.backend.Quinones_Vanessa_Cutipa_Ivan.service.impl;
 import com.backend.Quinones_Vanessa_Cutipa_Ivan.dto.entrada.OdontologoEntradaDto;
 import com.backend.Quinones_Vanessa_Cutipa_Ivan.dto.salida.OdontologoSalidaDto;
 import com.backend.Quinones_Vanessa_Cutipa_Ivan.entity.Odontologo;
-import com.backend.Quinones_Vanessa_Cutipa_Ivan.repository.OdontogoloRepository;
+import com.backend.Quinones_Vanessa_Cutipa_Ivan.repository.OdontologoRepository;
 import com.backend.Quinones_Vanessa_Cutipa_Ivan.service.IOdontologoService;
 import com.backend.Quinones_Vanessa_Cutipa_Ivan.utils.JsonPrinter;
 import org.modelmapper.ModelMapper;
@@ -16,10 +16,10 @@ import java.util.List;
 public class OdontologoService implements IOdontologoService {
 
     private final Logger LOGGER = LoggerFactory.getLogger(PacienteService.class);
-    private final OdontogoloRepository odontogoloRepository;
+    private final OdontologoRepository odontogoloRepository;
     private final ModelMapper modelMapper;
 
-    public OdontologoService(OdontogoloRepository odontogoloRepository, ModelMapper modelMapper) {
+    public OdontologoService(OdontologoRepository odontogoloRepository, ModelMapper modelMapper) {
         this.odontogoloRepository = odontogoloRepository;
         this.modelMapper = modelMapper;
     }

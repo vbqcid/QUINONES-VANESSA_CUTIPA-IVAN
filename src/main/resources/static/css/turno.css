@@ -1,17 +1,20 @@
-@import url(globalStyles.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
 
 header {
     background-color: #343a40;
     color: #fff;
     padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
     padding: 0 20px;
 }
 
@@ -43,13 +46,29 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+.nav ul li .btn-reserva {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav ul li .btn-reserva:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
 }
 
 h1 {
@@ -58,40 +77,39 @@ h1 {
     color: #007bff;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.informacion-turno {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+    border: 1px solid #ced4da; /* Borde */
+    max-width: 800px; /* Ancho máximo */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #555;
+.informacion-turno h2, .informacion-turno p {
+    margin: 0 0 10px 0; /* Margen inferior para elementos de encabezado y párrafo */
 }
 
-select,
-input[type="datetime-local"] {
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 6px;
-    font-size: 16px;
-    background-color: #f1f3f4;
-    transition: border-color 0.3s;
+.informacion-turno .buttons {
+    display: flex; /* Alinear los botones en fila */
+    justify-content: flex-end; /* Alinear los botones a la derecha */
+    gap: 10px; /* Espaciado entre botones */
 }
 
-select:focus,
-input[type="datetime-local"]:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-button[type="submit"] {
+.informacion-turno button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 14px 24px;
+    padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
-    fo
-};
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.informacion-turno button:hover {
+    background-color: #0056b3;
+}

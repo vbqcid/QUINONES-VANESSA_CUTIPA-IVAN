@@ -1,6 +1,4 @@
-/* stylesregister.css */
 
-/* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
@@ -91,7 +89,6 @@ button[type="submit"]:hover {
     color: #555;
 }
 
-/* Estilos específicos para campos condicionales */
 #numero-fields,
 #localidad-fields,
 #provincia-fields {
